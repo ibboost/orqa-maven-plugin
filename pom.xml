@@ -7,7 +7,7 @@
 	<packaging>maven-plugin</packaging>
 	<name>ORQA Maven Plugin</name>
 	<description>A Maven Plugin that provides the ability to execute ORQA tasks as part of the maven build.</description>
-	<url>https://www.ibboost.com</url>
+	<url>https://ibboost.github.io/orqa-maven-plugin</url>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -101,6 +101,26 @@
 				<configuration>
 					<skipDeploy>true</skipDeploy>
 				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Deploy the web site -->
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.12</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<!-- select the Maven phase in which the plugin will be executed -->
+						<phase>site-deploy</phase>
+						<configuration>
+							<server>github.com</server>
+							<!-- The commit message -->
+							<message>Updating the site for ORQA Maven Plugin</message>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
