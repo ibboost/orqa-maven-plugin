@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.ibboost.orqa</groupId>
+	<artifactId>orqa-maven-plugin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>maven-plugin</packaging>
+	<name>ORQA Maven Plugin</name>
+	<description>A Maven Plugin that provides the ability to execute ORQA tasks as part of the maven build.</description>
+	<url>https://www.ibboost.com</url>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugin-tools</groupId>
+			<artifactId>maven-plugin-annotations</artifactId>
+			<version>3.4</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<organization>
+		<name>IB Boost Ltd.</name>
+		<url>https://www.ibboost.com</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/ibboost/orqa-maven-plugin</url>
+	</scm>
+
+	<profiles>
+		<profile>
+			<id>plugin-test</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.ibboost.orqa.maven</groupId>
+						<artifactId>orqa-maven-plugin</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+						<executions>
+							<execution>
+								<id>run-example-task</id>
+								<goals>
+									<goal>execute</goal>
+								</goals>
+								<configuration>
+									<task>Examples/All.task</task>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>
