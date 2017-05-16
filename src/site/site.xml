@@ -6,8 +6,9 @@
 	</skin>
 	
 	<body>
-		<menu name="Overview">
-			<item name="Configuration" href="configuration.html" />
+		<menu name="ORQA Plugin">
+			<item name="About" href="index.html"/>
+			<item name="Configuration" href="execute-mojo.html" />
 		</menu>
 		<menu ref="modules" />
 		<menu ref="reports" />

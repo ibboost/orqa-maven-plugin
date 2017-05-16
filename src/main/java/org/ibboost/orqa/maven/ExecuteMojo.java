@@ -17,22 +17,30 @@ import org.ibboost.orqa.maven.utils.OutputHandler;
 
 /**
  * Executes an ORQA task as part of a maven build cycle.
- *
- * @goal execute - Executes an ORQA task
+
  * @author andrew.cowlin
  *
  */
-@Mojo(name = "execute", defaultPhase = LifecyclePhase.INTEGRATION_TEST, inheritByDefault = false)
+@Mojo(name="execute", defaultPhase=LifecyclePhase.INTEGRATION_TEST)
 public class ExecuteMojo extends AbstractMojo {
 
 	private static final String ORQA_HOME_PROPERTY = "ORQA_HOME";
 
+	/**
+	 * The location of the ORQA distribution to use. Defaults to ORQA_HOME environment variable
+	 */
 	@Parameter(property = "execute.orqaHome")
 	private File orqaHome;
 
+	/**
+	 * The path of the task to execute relative to the model.
+	 */
 	@Parameter(property = "execute.task", required = true)
 	private String task;
 
+	/**
+	 * The parameters to pass through to the task.
+	 */
 	@Parameter
 	private Map<String, String> taskParams;
 
