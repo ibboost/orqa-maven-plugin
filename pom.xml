@@ -44,6 +44,7 @@
 
 	<scm>
 		<url>https://github.com/ibboost/orqa-maven-plugin</url>
+		<developerConnection>scm:git:https://github.com/ibboost/orqa-maven-plugin</developerConnection>
 	</scm>
 
 	<profiles>
@@ -164,6 +165,11 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
 			</plugin>
 		</plugins>
 	</build>
