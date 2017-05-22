@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ibboost.orqa</groupId>
 	<artifactId>orqa-maven-plugin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 	<name>ORQA Maven Plugin</name>
 	<description>A Maven Plugin that provides the ability to execute ORQA tasks as part of the maven build.</description>
@@ -33,7 +33,7 @@
 		<name>IB Boost Ltd.</name>
 		<url>https://www.ibboost.com</url>
 	</organization>
-	
+
 	<developers>
 		<developer>
 			<id>andrew.cowlin</id>
@@ -60,6 +60,7 @@
 		<url>https://github.com/ibboost/orqa-maven-plugin</url>
 		<connection>scm:git:https://github.com/ibboost/orqa-maven-plugin</connection>
 		<developerConnection>scm:git:https://github.com/ibboost/orqa-maven-plugin</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<profiles>
@@ -70,7 +71,7 @@
 					<plugin>
 						<groupId>org.ibboost.orqa</groupId>
 						<artifactId>orqa-maven-plugin</artifactId>
-						<version>0.0.1-SNAPSHOT</version>
+						<version>0.0.3-SNAPSHOT</version>
 						<executions>
 							<execution>
 								<id>run-example-task</id>
