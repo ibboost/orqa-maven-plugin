@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ibboost.orqa</groupId>
 	<artifactId>orqa-maven-plugin</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 	<packaging>maven-plugin</packaging>
 	<name>ORQA Maven Plugin</name>
 	<description>A Maven Plugin that provides the ability to execute ORQA tasks as part of the maven build.</description>
@@ -60,7 +59,7 @@
 		<url>https://github.com/ibboost/orqa-maven-plugin</url>
 		<connection>scm:git:https://github.com/ibboost/orqa-maven-plugin</connection>
 		<developerConnection>scm:git:https://github.com/ibboost/orqa-maven-plugin</developerConnection>
-		<tag>HEAD</tag>
+		<tag>orqa-maven-plugin-0.0.3</tag>
 	</scm>
 
 	<profiles>
@@ -71,7 +70,7 @@
 					<plugin>
 						<groupId>org.ibboost.orqa</groupId>
 						<artifactId>orqa-maven-plugin</artifactId>
-						<version>0.0.3-SNAPSHOT</version>
+						<version>0.0.3</version>
 						<executions>
 							<execution>
 								<id>run-example-task</id>
