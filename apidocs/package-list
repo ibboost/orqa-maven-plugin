@@ -1,0 +1,5 @@
+
+org.ibboost.orqa.maven
+org.ibboost.orqa.maven.domain
+org.ibboost.orqa.maven.services
+org.ibboost.orqa.maven.utils
