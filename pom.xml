@@ -33,6 +33,20 @@
 		<name>IB Boost Ltd.</name>
 		<url>https://www.ibboost.com</url>
 	</organization>
+	
+	<developers>
+		<developer>
+			<id>andrew.cowlin</id>
+			<name>Andrew Cowlin</name>
+			<email>andrew.cowlin@ibboost.com</email>
+			<organization>IB Boost</organization>
+			<organizationUrl>https://www.ibboost.com</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<licenses>
 		<license>
@@ -44,6 +58,7 @@
 
 	<scm>
 		<url>https://github.com/ibboost/orqa-maven-plugin</url>
+		<connection>scm:git:https://github.com/ibboost/orqa-maven-plugin</connection>
 		<developerConnection>scm:git:https://github.com/ibboost/orqa-maven-plugin</developerConnection>
 	</scm>
 
