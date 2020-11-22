@@ -237,6 +237,9 @@
             <goals>
               <goal>sign</goal>
             </goals>
+            <configuration>
+              <passphrase>${env.GPG_SIGNING_KEY_PASSPHRASE}</passphrase>
+            </configuration>
           </execution>
         </executions>
       </plugin>
