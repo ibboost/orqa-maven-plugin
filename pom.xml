@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ibboost.maven.plugins</groupId>
   <artifactId>orqa-maven-plugin</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
   <name>ORQA Maven Plugin</name>
   <description>Maven Plugin that provides the ability to execute IB Boost's ORQA tasks as part of the Maven build.</description>
@@ -42,7 +42,7 @@
     <url>https://github.com/ibboost/orqa-maven-plugin</url>
     <connection>scm:git:https://github.com/ibboost/orqa-maven-plugin</connection>
     <developerConnection>scm:git:https://github.com/ibboost/orqa-maven-plugin</developerConnection>
-    <tag>orqa-maven-plugin-1.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
   <dependencies>
     <dependency>
