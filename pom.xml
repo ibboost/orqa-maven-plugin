@@ -273,7 +273,8 @@
             <groupId>com.github.github</groupId>
             <artifactId>site-maven-plugin</artifactId>
             <configuration>
-              <server>ibbci.github.com</server>
+              <!-- Changed this from ibbci.github.com as unnecessary extension of settings.xml servers otherwise -->
+              <server>github.com</server>
               <message>Updating the site for ORQA Maven Plugin</message>
             </configuration>
             <executions>
