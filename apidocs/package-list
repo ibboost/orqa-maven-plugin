@@ -1,4 +1,4 @@
-
+org.ibboost.maven.plugins.orqa_maven_plugin
 org.ibboost.orqa.maven
 org.ibboost.orqa.maven.domain
 org.ibboost.orqa.maven.services
