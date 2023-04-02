@@ -105,13 +105,14 @@
           <version>3.0.0</version>
           <configuration>
             <mavenExecutorId>forked-path</mavenExecutorId>
-            <preparationGoals>clean enforcer:enforce verify</preparationGoals>
-            <goals>enforcer:enforce source:jar-no-fork deploy</goals>
+            <preparationGoals>clean verify</preparationGoals>
+            <goals>source:jar-no-fork deploy site-deploy</goals>
             <tagBase>release/${project.groupId}/</tagBase>
             <tagNameFormat>@{project.version}</tagNameFormat>
             <pushChanges>true</pushChanges>
             <localCheckout>true</localCheckout>
-            <useReleaseProfile>false</useReleaseProfile>
+            <useReleaseProfile>true</useReleaseProfile>
+            <releaseProfiles>gpg,deploy-site-to-github</releaseProfiles>
           </configuration>
         </plugin>
         <plugin>
