@@ -103,6 +103,16 @@
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
           <version>3.0.0</version>
+          <configuration>
+            <mavenExecutorId>forked-path</mavenExecutorId>
+            <preparationGoals>clean enforcer:enforce verify</preparationGoals>
+            <goals>enforcer:enforce source:jar-no-fork deploy</goals>
+            <tagBase>release/${project.groupId}/</tagBase>
+            <tagNameFormat>@{project.version}</tagNameFormat>
+            <pushChanges>true</pushChanges>
+            <localCheckout>true</localCheckout>
+            <useReleaseProfile>false</useReleaseProfile>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
